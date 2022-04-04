@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyDapperAPI", "CompanyDapperAPI\CompanyDapperAPI.csproj", "{805D5F6B-C74B-45D7-9205-5CF16DC46CC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyDapperAPI", "CompanyDapperAPI\CompanyDapperAPI.csproj", "{805D5F6B-C74B-45D7-9205-5CF16DC46CC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{EAC1F0EB-9F8C-467D-A07D-9BA178563148}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{805D5F6B-C74B-45D7-9205-5CF16DC46CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{805D5F6B-C74B-45D7-9205-5CF16DC46CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{805D5F6B-C74B-45D7-9205-5CF16DC46CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAC1F0EB-9F8C-467D-A07D-9BA178563148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC1F0EB-9F8C-467D-A07D-9BA178563148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC1F0EB-9F8C-467D-A07D-9BA178563148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC1F0EB-9F8C-467D-A07D-9BA178563148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

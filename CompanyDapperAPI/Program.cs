@@ -1,6 +1,7 @@
 using CompanyDapperAPI.DAL;
 using CompanyDapperAPI.DAL.Repository;
 using CompanyDapperAPI.DAL.Repository.Contracts;
+using CompanyDapperAPI.GlobalErrorHandling;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,8 +27,10 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
 
+/*app.ConfigureExceptionHandler(logger);*/
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

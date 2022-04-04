@@ -1,7 +1,6 @@
-﻿using CompanyDapperAPI.DAL.Models;
-using CompanyDapperAPI.DAL.Repository.Contracts;
+﻿using CompanyDapperAPI.DAL.Repository.Contracts;
 using CompanyDapperAPI.Dto;
-using Microsoft.AspNetCore.Http;
+using Logger.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyDapperAPI.Controllers
@@ -11,9 +10,11 @@ namespace CompanyDapperAPI.Controllers
     public class CompanyController : ControllerBase
     {
         private readonly ICompanyRepository _companyRepo;
-        public CompanyController(ICompanyRepository companyRepo)
+        private ILoggerManager _logger;
+        public CompanyController(ICompanyRepository companyRepo, ILoggerManager logger)
         {
             _companyRepo = companyRepo;
+            _logger = logger;
         }
         [HttpGet]
         public async Task<IActionResult> GetCompanies()
